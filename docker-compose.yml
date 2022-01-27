@@ -5,8 +5,8 @@ services:
     container_name: angular
     image: frontend-nodeappi
     build:
-      context: ./weriseapps-front-end-angular
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: ./weriseapps-front-end-angular/Dockerfile
     ports:
       - "4200:4200"
     networks:
@@ -15,8 +15,8 @@ services:
     container_name: nodeapp
     image: backend-nodeappi
     build:
-      context: ./weriseapps-back-end-node-js
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: ./weriseapps-back-end-node-js/Dockerfile
     ports:
       - "3000:3000"
     networks:
