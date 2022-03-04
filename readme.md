@@ -32,11 +32,18 @@ Now that you have docker installed on your local machine you can run `Nodeappi` 
 
 Open your favorite Terminal and run these commands.
 
-Build node image :
 
+In order to run the app on your computer you will need to clone this repository, select a directory then run:
 ```sh
-$ cd CURRENT_DIR/NODE_DIR
-$ docker build -t nodeapp .
+git clone https://github.com/LQss11/Nodeappi.git
+```
+get inside the repository:
+```sh
+cd Nodeappi 
+```
+Then build node image:
+```sh
+docker build -t nodeapp .
 ```
 
 Build angular image :
